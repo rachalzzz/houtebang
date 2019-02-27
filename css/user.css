@@ -1,0 +1,209 @@
+/*-------------------------------- 我的----添加daiban------------------------------------- */
+		.count_btn{    height: 0.5rem;
+            width: 0.6rem;
+            line-height:  0.5rem;
+        float: left;text-align: center;
+            position: relative;font-size: 0.3rem;
+            border: 1px solid #999999; 
+            vertical-align: -6px;}
+            .agItem-count .count_number{
+            background-color: transparent;
+            font-size: 0.26rem !important; text-align: center;
+          height: 0.5rem;
+            width:  0.8rem !important;border: 0;
+            float: left;border-top:1px solid #999999;border-bottom:1px solid #999999;
+            color: #5f646e;}
+            .agItem-count{ float: right; width:2.4rem;margin-top:0.2rem;}
+
+/*-------------------------------- 我的----添加收货地址------------------------------------- */
+
+.addItem{background:#fff;font-size:0.28rem;height: 0.9rem;width:96%; position: relative; border-bottom:1px solid #dbdbdb; padding-left: 4%; line-height:0.9rem; color: #333333;}
+.addItem_right{left:1.67rem;position: absolute;width:5rem; height: 0.9rem;border:0;margin-right: 2%;}
+.addItem2{font-size:0.28rem;height: 2.3rem;width:96%; padding-left: 4%; position: relative; border-bottom:1px solid #dbdbdb;  line-height:0.9rem; color: #333333;background:#fff;}
+.addItem_right2{left:1.67rem;position: absolute;border:0;width:5.2rem;min-height:2rem;margin-top:0.25rem; margin-right: 2%;height: 0.9rem;}
+.addItem .icon-right{margin-right:3%;}
+/*-------------------------------- 我的----收货地址------------------------------------- */
+#empty{ position: absolute;top:5.16rem;width: 100%;text-align: center}
+#empty .icon-dingwei{font-size: 2rem;color:#b6b6b6;}
+#empty .title{ font-size: 0.3rem; color: #666;margin-top:0.4rem;margin-bottom:0.1rem}
+#empty .subtitle{ font-size: 0.2rem; color: #666}
+
+.addr{padding:0.3rem 0 0.25rem 0;background: #fff;width:100%; position: relative; }
+.addr_name{font-size: 0.29rem;color: #333333;margin-bottom:0.2rem;margin-left:0.21rem;margin-right:0.21rem}
+.addr_name div{color: #333333 !important;}
+.addr_addr{margin-left:0.21rem;margin-right:0.21rem;font-size: 0.28rem;line-height: 0.36rem;padding-bottom:0.2rem;color: #686868; }
+.addr .line{ background-image:url(../img/line.png);width: 100%;height:0.05rem; position: absolute; bottom:0; }
+.addr_handle{font-size: 0.29rem; padding-top:0.22rem; margin-left:0.21rem;margin-right:0.21rem}     
+.addr_handle .iconfont{margin-right: 5px}
+.addr_handle .edit{color: #686868;margin-right: 20px}
+.addr_handle .delete{color: #f2a800;}
+.addr_handle .delete i{color: #f2a800;}
+.addr_handle .edit i{color: #686868;}
+
+/* .edit:active{color: #f2a800!important;}
+.delete:active {color: #f2a800!important;}  */
+
+/*-------------------------------- 个人资料修改------------------------------------- */
+.myService{width:100%;background: #fff; font-size:0.28rem;color:#000; }
+.myService .myServiceItem{height:1.05rem;line-height:1.05rem;margin-left:0.29rem; color: #686868;font-size:0.28rem;background: #fff;}
+.myService .myServiceItem span{color: #000000;float: right;margin-right: 0.28rem;} 
+.myService .myServiceMsg {color: #000000;min-height:3rem;padding:0.29rem; font-size:0.28rem;background: #fff;} 
+
+.myService .myServiceItem input{color: #686868;
+	width: 6.8rem;
+    height: 0.96rem;font-size: 0.28rem; 
+    border: 0; /* 方法1 */
+    -webkit-appearance: none; /* 方法2 */
+    background-color: #ffffff;  
+} 
+.myService #userMsg{min-height:3rem;
+    width: 92%; overflow: hidden;    line-height: 18px;  border: 0; /* 方法1 */
+  margin:0.29rem;font-size:0.28rem;color: #686868;
+}
+ 
+
+/*-------------------------------- 我的----客户处理------------------------------------- */
+/*.csNav{width:100%;height:0.8rem; background: #fff; position: relative; }
+.csNav .icon-logo{ position: absolute;left:0.21rem;color:#49A75B;  top:0rem;    font-size: 0.75rem;}
+.csNav .icon-user{ position: absolute;right:0.25rem;color:#7c7c7c;  top:0.2rem;  font-size: 0.4rem;}*/
+
+.csItem{width:94%;padding-left:4%;height:0.96rem;padding-right: 2%; position: relative; 
+    font-size: 0.28rem;padding-top:0.25rem; background: #fff; }
+.csItem .title{color: #000000;}
+.csItem .title span{margin-left: 5px}
+.csItem .time{color: #686868;font-size: 0.24rem;margin-top:0.1rem;}
+.csItem .status{ position: absolute;right: 3%;top:0.4rem;color: #686868;}
+.csItem  .icon-right{color: #686868;} 
+.csItem:active{ background: #F6F6F6}  
+/*--------------------------------我的-- 个人资料修改------------------------------------- */
+.infor{width:100%;background: #fff; font-size:0.28rem;color:#000; }
+.infor .inforItemTop{height:1.2rem;line-height:1.2rem;     margin-left: 0.29rem;  position: relative;}
+.infor .inforItemTop img{width:0.9rem;height: 0.9rem;border-radius: 50%; float: right; margin-top: 0.18rem;}
+.infor .inforItemTop .icon-right{ float: right;margin-right: 0.21rem;}
+
+.infor .inforItem{height:0.9rem;line-height:0.9rem;margin-left:0.29rem;}
+.infor .inforItem .tel{color: #686868;float: right;margin-right: 0.21rem;}
+.infor .inforItem #userName{ float: right;margin-right: 0.1rem;}
+.infor .inforItem .icon-right{ float: right;margin-right: 0.21rem;}
+#file{ background: #999; position: absolute;height: 100%;width: 80%; right: 0; opacity: 0;}
+
+#namePopup{width:100%;height:100%; overflow: hidden;}
+#name{	width: 6.8rem;
+    height: 0.96rem;font-size: 0.28rem; 
+    border: 0; /* 方法1 */
+    -webkit-appearance: none; /* 方法2 */
+    background-color: #ffffff;margin-top:0.2rem;margin-left:0.2rem;
+    box-shadow: 0px 2px 10px 0px 
+        rgba(4, 0, 0, 0.13); text-indent: 10px;
+    border-radius: 0.06rem;
+} 
+.addBtn .icon-jia{color: #37bf8a;font-size:0.7rem;position: fixed; left:3.25rem; bottom:0.31rem; border-radius: 50%;;
+}
+
+/*-------------------------------- 个人中心首页------------------------------------- */
+.userTop {
+    width: 100%;
+    position: relative;
+    height: 1.3rem;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px 0px rgba(175, 175, 175, 0.52);
+}
+
+#userPic {
+    width: 0.85rem;
+    height: 0.85rem;
+    position: absolute;
+    left: 0.19rem;
+    top: 0.23rem;
+}
+
+.userTop .userMsg {
+    margin-left: 2rem
+}
+
+.userTop .icon-right {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.53rem;
+}
+
+.userTop .userTel {
+    font-size: 0.28rem;
+    color: #000000;
+    margin-bottom: 0.14rem
+}
+
+.userTop .userName {
+    font-size: 0.26rem;
+    color: #686868;
+}
+
+.userTop .userMsg {
+    margin-left: 1.25rem;
+    padding-top: 0.27rem
+}
+
+.userContent {
+    margin-top: 0.2rem;
+    background: #fff;
+    box-shadow: -1px -3px 6px rgba(175, 175, 175, 0.35);
+}
+
+.userItem {
+    font-size: 0.28rem;
+    height: 0.66rem;
+    padding-top: 0.31rem;
+    border-bottom: 1px solid #EDEDED;
+    margin-left: 0.34rem;
+    position: relative;
+}
+
+.userItem .user1 {
+    width: 0.35rem;
+    height: 0.4rem;
+    padding-right: 0.2rem;
+    position: absolute;
+    top: 0.35rem;
+}
+
+.userItem .user2 {
+    width: 0.35rem;
+    height: 0.4rem;
+    padding-right: 0.2rem;
+    position: absolute;
+    top: 0.35rem;
+}
+
+.userItem .user3 {
+    width: 0.35rem;
+    height: 0.4rem;
+    padding-right: 0.2rem;
+    position: absolute;
+    top: 0.35rem;
+}
+
+.userItem .icon-right {
+    position: absolute;
+    top: 0.33rem;
+    right: 10px;
+}
+
+.userItem span {
+    position: absolute;
+    top: 0.36rem;
+    left: 0.5rem
+}
+
+.loginOut {
+    width: 6.80rem;
+    height: 0.8rem;
+    background-color: #37bf8a;
+    font-size: 0.28rem; 
+    left: 0.21rem;
+    margin: 0 auto;
+    border-radius: 0.06rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
