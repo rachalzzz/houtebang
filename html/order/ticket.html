@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />  
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title></title>  
+	<link rel="stylesheet" href="../../css/common.css"> 
+	<link rel="stylesheet" href="../../css/order.css">  
+	<link rel="stylesheet" href="../../css/weui.min.css">  
+	<link rel="stylesheet" href="../../css/jquery-weui.css"> 
+	<link rel="stylesheet" type="text/css" href="../../iconfont/iconfont.css" />  
+	<script src="../../js/common.js"></script> 
+	<script src="../../js/jquery-2.1.4.js"></script> 
+	<script src="../../js/jquery-weui.js"></script>
+	<script src="../../js/leftTime.min.js"></script>  
+       <script src="../../js/checkout.js"></script> 
+	<script src="../../js/ticket.js"></script> 
+</head>  
+	<body>  
+		<div class="csNav">
+			<i class="iconfont icon-logo"></i>
+			<i class="iconfont icon-user"></i> 
+		</div> 
+		<div class="wh20"></div>
+		<!--发票类型-->
+		<div class="ticket_top">
+			<div class="title">发票类型</div>
+			<div class="tk">
+					<div class="tk_type active" >
+						<span>电子发票</span>
+						<img src="../../img/top.png"/>
+					</div>
+					<div class="tk_type"> 
+						<span>不开发票</span>
+						<img src="../../img/top.png"  class="ishide"/>
+					</div>
+			</div>
+		</div>
+		<div class="wh20"></div>
+		<!--发票信息-->
+		<div class="ticket_msg">
+			<div class="ticketItem bb1">
+				发票信息
+			</div>
+			<div  class="ticketItem" id="type">
+				<div>
+					<i class="iconfont icon-selection green"></i>
+					<span>个人</span>
+				</div>
+				<div>
+					<i class="iconfont icon-choose"></i>
+					<span>公司</span>
+				</div>
+			</div>
+			<div class="wh1"></div>
+			<div  class="ticketItem">
+				发票抬头<input  id="name" placeholder="个人(不可修改)">
+			</div>
+			<div class="wh1"></div>
+			<div  class="ticketItem ">
+				手机号码<input id="phone"  placeholder="请输入常用手机号码">
+			</div>
+			<div class="wh1"></div>
+			<div  class="ticketItem ishide" id="code">
+				识别码<input id="idcode" placeholder="纳税人识别码或统一社会信用代码">
+			</div>
+			<div class="wh1 ishide" id="code1"></div>
+			<div  class="ticketItem">
+				邮箱地址<input  id="eamil" placeholder="请输入邮箱地址">
+			</div> 
+		</div>
+	
+		<div class="submit" id="submit">确定</div>
+	</body>   
+</html>

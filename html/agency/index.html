@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no" />  
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../css/common.css"> 
+		<link rel="stylesheet" href="../../css/weui.min.css">  
+		<link rel="stylesheet" href="../../css/jquery-weui.css">
+		<link rel="stylesheet" href="../../css/order.css">
+		<link rel="stylesheet" href="../../css/user.css">
+		<link rel="stylesheet" type="text/css" href="../../iconfont/iconfont.css" />   
+		<script src="../../js/jquery-2.1.4.js"></script> 
+		<script src="../../js/jquery-weui.js"></script> 
+		<script src="../../js/leftTime.min.js"></script>   
+        <script src="../../js/common.js"></script>   
+		<script src="../../js/agency.js"></script>
+		<style>
+
+		</style>   
+	</head>  
+	<body>  
+        <div class="csNav">
+            <i class="iconfont icon-logo"></i>
+            <i class="iconfont icon-user"></i> 
+        </div> 
+        <!--提示-->
+ 		<div class="tips">
+ 			<i class="iconfont icon-gantan"></i>
+ 			目前只开通广东惠州惠城区
+ 		</div>
+ 		<!--地址--> 
+        <div class="agItem active" id="addrShow"> 
+            <i class="iconfont icon-location green ml20"></i>
+            <span id="sheng">广东</span>
+            <span id="shi">惠州</span>
+            <span id="qu">惠城区</span>
+        </div>
+        <div class="wh20"></div>
+        <!--选项-->
+        <div class="agrows">
+	        <div class="agItem"> 
+	            <i class="iconfont icon-chooseh green ml20"></i>
+				<span>户口迁入(￥100.00)</span> 
+				<div class="agItem-count">
+					<a class="count_btn decrease">-</a>
+					<input class="count_number" type="number" value="1">
+					<a class="count_btn increase">+</a>
+				</div>
+	        </div>
+	        <div class="wh94"></div>
+	        <div class="agItem"> 
+	            <i class="iconfont icon-choose  ml20"></i>
+				<span>户口迁出(￥100.00)</span>
+				<div class="agItem-count">
+					<a class="count_btn decrease">-</a>
+					<input class="count_number" type="number" value="1">
+					<a class="count_btn increase">+</a>
+				</div> 
+	        </div>
+	        <div class="wh94"></div>
+	        <div class="agItem"> 
+	            <i class="iconfont icon-choose  ml20"></i>
+				<span>准生证代办(￥100.00)</span>
+				<div class="agItem-count">
+					<a class="count_btn decrease">-</a>
+					<input class="count_number" type="number" value="1">
+					<a class="count_btn increase">+</a>
+				</div> 
+	        </div>
+	        <div class="wh94"></div>
+	        <div class="agItem"> 
+	            <i class="iconfont icon-choose  ml20"></i>
+				<span>其他业务(￥100.00)</span> 
+				<div class="agItem-count">
+					<a class="count_btn decrease">-</a>
+					<input class="count_number" type="number" value="1">
+					<a class="count_btn increase">+</a>
+				</div>
+	        </div>
+	        <div class="other ishide">
+	        	<textarea name="" rows="5" cols="10" placeholder="请输入你需要办理的业务..."></textarea>
+	        </div> 
+        </div> 
+        <div class="submit mt200"  onclick="location='../order/addOrder.html'">
+        	确定
+		</div>
+		
+
+<!-- 地址弹窗 -->
+<div id="popu" class="popuAll ishide">
+	<div id="bg"></div>
+	<div id="popuC">
+		<div class="popuTitle">
+			所在地区
+			<i class="iconfont icon-close pull-right" id="close"></i>
+		</div>
+		<div id="popuRow">
+			<div class="popuRows">
+				<span id="province" class="active">广东</span> 
+				<span id="city"  class="ishide">请选择</span> 
+				<span id="area"  class="ishide">请选择</span> 
+			</div>
+			<div class="popuItem" id="provinceItem">
+				<span>省省111</span>
+				<span>省省222</span>
+				<span>省省333</span>
+				<span>省省444</span>
+				<span>省省555</span>
+				<span>省省666</span>
+				<span>省省777</span>
+				<span>省省888</span> 
+			</div>
+			<div class="popuItem ishide" id="cityItem">
+				<span>市市111</span>
+				<span>市市222</span>
+				<span>市市333</span>
+				<span>市市444</span>
+				<span>市市555</span>
+				<span>市市666</span>
+				<span>市市777</span>
+				<span>市市888</span> 
+			</div>
+			<div class="popuItem ishide" id="areaItem">
+				<span>区区111</span>
+				<span>区区222</span>
+				<span>区区333</span>
+				<span>区区444</span>
+				<span>市市555</span>
+				<span>区区666</span>
+				<span>区区777</span>
+				<span>区区888</span> 
+			</div>
+			 
+		</div>
+	</div>
+</div>
+</body> 
+ 
+</html>

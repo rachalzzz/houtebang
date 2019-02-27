@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no" />  
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../css/common.css"> 
+		<link rel="stylesheet" href="../../css/weui.min.css">  
+		<link rel="stylesheet" href="../../css/jquery-weui.css">
+        <link rel="stylesheet" href="../../css/user.css">
+        <link rel="stylesheet" href="../../css/order.css">
+		<link rel="stylesheet" type="text/css" href="../../iconfont/iconfont.css" />   
+		<script src="../../js/jquery-2.1.4.js"></script> 
+		<script src="../../js/jquery-weui.js"></script> 
+        <script src="../../js/leftTime.min.js"></script>  
+       <script src="../../js/common.js"></script>   
+        <script src="../../js/myOrder.js"></script> 
+        <style>
+
+       </style>  
+	</head>  
+	<body>  
+        <div class="csNav" style="position: fixed;top:0;">
+            <i class="iconfont icon-logo"></i>
+            <i class="iconfont icon-user"></i> 
+        </div> 
+        <!-- 有数据头部 -->
+        <div class="order_top">
+            <div id="step1" class="green">全部<span class="isshow"></span></div>
+            <div id="step2">代付款<span class="ishide"></span></div>
+            <div id="step3">待审核<span class="ishide"></span></div>
+            <div id="step4">代办中<span class="ishide"></span></div>
+        </div>
+        <div class="wh100"> </div>
+        <!-- 全部 -->
+        <div id="order1">
+            <div class="orderItem"> 
+            <div  onclick="location='./orderDetails.html'">
+                <div class="order_tab"  >
+                    订单号：8111111111111
+                    <span class="pull-right  orange">代付款</span>
+                </div>
+                <div class="order_tab3" >
+                    代办项目
+                    <span class="subtitle">入户代办</span>
+                </div>
+                <div class="order_tab2"   >
+                    <span>共1件代办</span><span>合计：￥500.00</span>
+                </div>
+
+                </div>
+                <div class="order_btn">
+                    <div class="topay"  onclick="location='./payWay.html'">去付款</div>   
+                    <div class="greybtn cancelBtn">取消订单</div>
+                </div>
+            </div>
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                <div class="order_tab">
+                    订单号：8111111111111
+                    <span class="pull-right  green">待审核</span>
+                </div>
+                <div class="order_tab3">
+                    代办项目
+                    <span class="subtitle">入户代办</span>
+                </div>
+                <div class="order_tab2">
+                    <span>共1件代办</span><span>合计：￥500.00</span>
+                </div>
+            </div>
+                <div class="order_btn"> 
+                     <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                </div>
+            </div>
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'"> 
+                <div class="order_tab">
+                    订单号：8111111111111
+                    <span class="pull-right  green">去待收货</span>
+                </div>
+                <div class="order_tab3">
+                    代办项目
+                    <span class="subtitle">入户代办</span>
+                </div>
+                <div class="order_tab2">
+                    <span>共1件代办</span><span>合计：￥500.00</span>
+                </div>
+                </div>
+                <div class="order_btn">  
+                     <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                    <div class="greybtn" onclick="location='./order_wuliu.html'">追踪物流</div>
+                    <div class="greybtn"  onclick="location='./entryLogistics.html'">录入物流</div>
+                </div>
+            </div>
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                    <div class="order_tab">
+                        订单号：8111111111111
+                        <span class="pull-right  green">代办中</span>
+                    </div>
+                    <div class="order_tab3">
+                        代办项目
+                        <span class="subtitle">入户代办</span>
+                    </div>
+                    <div class="order_tab2">
+                        <span>共1件代办</span><span>合计：￥500.00</span>
+                    </div>
+                    </div>
+                    <div class="order_btn"> 
+                         <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                    </div>
+            </div> 
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                    <div class="order_tab">
+                        订单号：8111111111111
+                        <span class="pull-right  green">交易成功</span>
+                    </div>
+                    <div class="order_tab3">
+                        代办项目
+                        <span class="subtitle">入户代办</span>
+                    </div>
+                    <div class="order_tab2">
+                        <span>共1件代办</span><span>合计：￥500.00</span>
+                    </div>
+                    </div>
+                    <div class="order_btn">  
+                         <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                        <div class="greybtn" onclick="location='./order_wuliu.html'">追踪物流</div>
+                        <div class="greybtn" onclick="location='./ticket.html'">开具发票</div>
+                    </div>
+                </div>
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                    <div class="order_tab">
+                        订单号：8111111111111
+                        <span class="pull-right  grey">已取消</span>
+                    </div>
+                    <div class="order_tab3">
+                        代办项目
+                        <span class="subtitle">入户代办</span>
+                    </div>
+                    <div class="order_tab2">
+                        <span>共1件代办</span><span>合计：￥500.00</span>
+                    </div>
+                    </div>
+                    <div class="order_btn">  
+                         <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                        <div class="greybtn">删除订单</div> 
+                    </div>
+            </div> 
+        </div> 
+         <!-- 待付款 -->
+        <div id="order2">
+                <div class="orderItem">
+                        <div  onclick="location='./orderDetails.html'">
+                        <div class="order_tab">
+                            订单号：8111111111111
+                            <span class="pull-right  orange">代付款</span>
+                        </div>
+                        <div class="order_tab3">
+                            代办项目
+                            <span class="subtitle">入户代办</span>
+                        </div>
+                        <div class="order_tab2">
+                            <span>共1件代办</span><span>合计：￥500.00</span>
+                        </div>
+                        </div>
+                        <div class="order_btn">
+                            <div class="topay"  onclick="location='./payWay.html'">去付款</div>  
+                             <div class="greybtn cancelBtn">取消订单</div>
+                        </div>
+                    </div>
+                    <div class="orderItem">
+                            <div  onclick="location='./orderDetails.html'">
+                            <div class="order_tab">
+                                订单号：8111111111111
+                                <span class="pull-right  orange">代付款</span>
+                            </div>
+                            <div class="order_tab3">
+                                代办项目
+                                <span class="subtitle">入户代办</span>
+                            </div>
+                            <div class="order_tab2">
+                                <span>共1件代办</span><span>合计：￥500.00</span>
+                            </div>
+                            </div>
+                            <div class="order_btn">
+                                <div class="topay"  onclick="location='./payWay.html'">去付款</div> 
+                                 <div class="greybtn cancelBtn">取消订单</div>
+                            </div>
+                        </div>    
+        </div>
+        <!-- 待审核 -->
+        <div id="order3"> 
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                <div class="order_tab">
+                    订单号：8111111111111
+                    <span class="pull-right  green">待审核</span>
+                </div>
+                <div class="order_tab3">
+                    代办项目
+                    <span class="subtitle">入户代办</span>
+                </div>
+                <div class="order_tab2">
+                    <span>共1件代办</span><span>合计：￥500.00</span>
+                </div>
+                </div>
+                <div class="order_btn"> 
+                    <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                </div>
+            </div> 
+        </div> 
+        <!-- 代办中 -->
+        <div id="order4">
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                <div class="order_tab">
+                    订单号：8111111111111
+                    <span class="pull-right  green">代办中</span>
+                </div>
+                <div class="order_tab3">
+                    代办项目
+                    <span class="subtitle">入户代办</span>
+                </div>
+                <div class="order_tab2">
+                    <span>共1件代办</span><span>合计：￥500.00</span>
+                </div>
+                </div>
+                <div class="order_btn"> 
+                     <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                </div>
+            </div> 
+            <div class="orderItem">
+                    <div  onclick="location='./orderDetails.html'">
+                    <div class="order_tab">
+                        订单号：8111111111111
+                        <span class="pull-right  green">代办中</span>
+                    </div>
+                    <div class="order_tab3">
+                        代办项目
+                        <span class="subtitle">入户代办</span>
+                    </div>
+                    <div class="order_tab2">
+                        <span>共1件代办</span><span>合计：￥500.00</span>
+                    </div>
+                    </div>
+                    <div class="order_btn"> 
+                         <div class="tobuy"  onclick="location='../agency/index.html'">再次购买</div>
+                    </div>
+                </div>         
+        </div>  
+        <!-- 没有数据 -->
+        <div id="empty" class="ishide">
+            <img src="../../img/empty.png" class="empty"/>
+            <div class="title">您暂时还没有订单</div>
+            <div class="subtitle">赶紧去添加新订单吧...</div>
+        </div>  
+        <!--点击加载更多-->
+        <div id="addMoreData">
+        	加载更多
+        </div>
+        	
+        <!-- 底部间隙 -->
+        <div class="wh30"></div>
+        <!-- 取消订单弹窗 -->
+        <!-- 弹窗 -->
+        <div id="popu" class="popuAll ishide">
+                <div id="bg"></div>
+                <div id="popuC">
+                    <div class="popuTitle">
+                        取消原因
+                        <i class="iconfont icon-close pull-right" id="close"></i>
+                    </div>
+                    <div id="popuRow">
+                        <div class="popu ">
+                            <span>收件地址/代办事项等信息错误</span>
+                            <i class="iconfont icon-selected ishide pull-right"></i>
+                        </div>
+                        <div class="popu">
+                                <span>重复下单/误下单</span> 
+                            <i class="iconfont icon-selected ishide pull-right"></i>
+                        </div>
+                        <div class="popu">
+                             <span>有更优惠的途径</span> 
+                            <i class="iconfont icon-selected ishide pull-right"></i>
+                        </div>
+                        <div class="popu">
+                                <span>支付遇到问题</span> 
+                            <i class="iconfont  ishide icon-selected pull-right"></i>
+                        </div>
+                        <div class="popu">
+                                <span>不想买了</span> 
+                            <i class="iconfont icon-selected ishide  pull-right"></i>
+                        </div> 
+                    </div>
+                </div>
+        </div>
+        
+        
+        
+        
+  
+</body>  
+</html>

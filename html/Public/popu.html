@@ -1,0 +1,233 @@
+ <!-- 公用弹窗 -->
+ <div id="popu" class="popuAll ishide">
+    <div id="bg"></div>
+    <div id="popuC">
+        <div class="popuTitle">
+            选择物流
+            <i class="iconfont icon-close pull-right" id="close"></i>
+        </div>
+        <div id="popuRow">
+            <div class="popu ">
+                <span>韵达快递</span>
+                <i class="iconfont icon-selected ishide pull-right"></i>
+            </div>
+            <div class="popu">
+                    <span>中通快递</span> 
+                <i class="iconfont icon-selected ishide pull-right"></i>
+            </div>
+            <div class="popu">
+                    <span>顺丰快递</span> 
+                <i class="iconfont icon-selected ishide pull-right"></i>
+            </div>
+            <div class="popu">
+                    <span>邮政物流</span> 
+                <i class="iconfont  ishide icon-selected pull-right"></i>
+            </div>
+            <div class="popu">
+                    <span>申通快递</span> 
+                <i class="iconfont icon-selected ishide  pull-right"></i>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+<!-- 弹窗 -->
+    <div id="popu" class="popuAll ishide">
+            <div id="bg"></div>
+            <div id="popuC">
+                <div class="popuTitle">
+                    取消原因
+                    <i class="iconfont icon-close pull-right" id="close"></i>
+                </div>
+                <div id="popuRow">
+                    <div class="popu ">
+                        <span>收件地址/代办事项等信息错误</span>
+                        <i class="iconfont icon-selected ishide pull-right"></i>
+                    </div>
+                    <div class="popu">
+                            <span>重复下单/误下单</span> 
+                        <i class="iconfont icon-selected ishide pull-right"></i>
+                    </div>
+                    <div class="popu">
+                            <span>有更优惠的途径</span> 
+                        <i class="iconfont icon-selected ishide pull-right"></i>
+                    </div>
+                    <div class="popu">
+                            <span>支付遇到问题</span> 
+                        <i class="iconfont  ishide icon-selected pull-right"></i>
+                    </div>
+                    <div class="popu">
+                            <span>不想买了</span> 
+                        <i class="iconfont icon-selected ishide  pull-right"></i>
+                    </div> 
+                </div>
+            </div>
+    </div>
+<!-- 删除弹窗 -->
+<div id="popu" class="popuAll ishide">
+    <div id="bg"></div>
+    <div id="popu_del">
+        <i class="iconfont icon-close" id="popu_close"></i>
+        <div class="text">确定要删除</div>
+        <div class="btnRow">
+            <div class="popu_close">取消</div>
+            <div class="popu_save">确定</div>
+        </div>
+    </div> 
+</div> 
+
+
+<!-- 地址弹窗 -->
+<div id="popu" class="ishide">
+        <div id="bg"></div>
+        <div id="popuC">
+            <div class="popuTitle">
+                所在地区
+                <i class="iconfont icon-close pull-right" id="close"></i>
+            </div>
+            <div id="popuRow">
+                <div class="popuRows">
+                    <span id="province" class="active">广东</span> 
+                    <span id="city"  class="ishide">请选择</span> 
+                    <span id="area"  class="ishide">请选择</span> 
+                </div>
+                <div class="popuItem" id="provinceItem">
+                    <span>省省111</span>
+                    <span>省省222</span>
+                    <span>省省333</span>
+                    <span>省省444</span>
+                    <span>省省555</span>
+                    <span>省省666</span>
+                    <span>省省777</span>
+                    <span>省省888</span> 
+                </div>
+                <div class="popuItem ishide" id="cityItem">
+                    <span>市市111</span>
+                    <span>市市222</span>
+                    <span>市市333</span>
+                    <span>市市444</span>
+                    <span>市市555</span>
+                    <span>市市666</span>
+                    <span>市市777</span>
+                    <span>市市888</span> 
+                </div>
+                <div class="popuItem ishide" id="areaItem">
+                    <span>区区111</span>
+                    <span>区区222</span>
+                    <span>区区333</span>
+                    <span>区区444</span>
+                    <span>市市555</span>
+                    <span>区区666</span>
+                    <span>区区777</span>
+                    <span>区区888</span> 
+                </div>
+                 
+            </div>
+        </div>
+</div>
+<!-- 执行方法 -->
+<!-- <script>
+    $(document).ready(function(){  
+    $("#wuliuShow").click(function(){ 
+		$("#popu").show(); 
+	});
+	$("#bg").click(function(){ 
+		$("#popu").hide(); 
+	});
+	$("#close").click(function(){ 
+		$("#popu").hide(); 
+	});
+	$("#popuRow .popu").click(function(){ 
+		$(this).addClass("green")
+		$(this).find(".icon-selected").removeClass("ishide")
+		$(this).siblings().removeClass("green")
+		$(this).siblings().find(".icon-selected").addClass("ishide") 
+		var selected =$(this).find("span").html() 
+		setTimeout(() => {
+			$("#popu").hide(); 
+			$("#courierirm").val(selected); 
+		},2*1000);
+
+	});
+});
+</script> -->
+
+<!-- 
+$(document).ready(function(){  
+    $("#addrShow").click(function(){  
+			$("#popu").show(); 
+			$("body").addClass("h100")  
+		});
+		$("#bg").click(function(){ 
+			$("#popu").hide(); 
+			$("body").removeClass("h100") 
+		});
+		$("#close").click(function(){ 
+			$("#popu").hide();
+			$("body").removeClass("h100") 
+		});  
+		$("#province").click(function(){ 
+			$(this).addClass("active")  
+			$(this).siblings().removeClass("active") 
+			$("#provinceItem").show()  
+			$("#cityItem").hide()  
+			$("#areaItem").hide()   
+		}); 
+		$("#city").click(function(){ 
+			$(this).addClass("active")  
+			$(this).siblings().removeClass("active") 
+			$("#provinceItem").hide()  
+			$("#cityItem").show()  
+			$("#areaItem").hide()   
+		}); 
+		$("#area").click(function(){ 
+			$(this).addClass("active")  
+			$(this).siblings().removeClass("active") 
+			$("#provinceItem").hide()  
+			$("#cityItem").hide()  
+			$("#areaItem").show()   
+		});   
+		//默认地址按钮切换
+		$("#provinceItem span").bind("click", function () {  
+			$(this).addClass("green") 
+			$(this).siblings().removeClass("green") 
+			var selected1 =$(this).html()  
+			setTimeout(() => {
+				$("#city").removeClass("ishide")
+				$("#provinceItem").hide()
+				$("#cityItem").show() 
+				$("#province").removeClass("active")
+				$("#city").addClass("active")
+				$("#province").html(selected1);  
+			},2*100); 
+		});
+		$("#cityItem span").bind("click", function () {  
+			$(this).addClass("green") 
+			$(this).siblings().removeClass("green") 
+			var selected2 =$(this).html()  
+			setTimeout(() => {
+				$("#city").html(selected2);  
+				$("#area").removeClass("ishide")
+				$("#cityItem").hide() 
+				$("#areaItem").show()  
+				$("#city").removeClass("active")
+				$("#area").addClass("active")
+			},2*100);  
+		});
+		$("#areaItem span").bind("click", function () {  
+			$(this).addClass("green") 
+			$(this).siblings().removeClass("green") 
+			var selected3 =$(this).html()  
+			setTimeout(() => {
+				$("#area").html(selected3);  
+				$("#area").removeClass("active") 
+				$("#popu").hide(); 
+				$("body").removeClass("h100")  
+				$("#sheng").html($("#province").html());  
+				$("#shi").html($("#city").html());  
+				$("#qu").html($("#area").html());  
+			},2*100);   
+		});
+});
+}); -->

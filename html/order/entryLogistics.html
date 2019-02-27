@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no" />  
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../css/common.css"> 
+		<link rel="stylesheet" href="../../css/weui.min.css">  
+		<link rel="stylesheet" href="../../css/jquery-weui.css">
+        <link rel="stylesheet" href="../../css/user.css">
+        <link rel="stylesheet" href="../../css/order.css">
+		<link rel="stylesheet" type="text/css" href="../../iconfont/iconfont.css" />   
+		<script src="../../js/jquery-2.1.4.js"></script> 
+		<script src="../../js/jquery-weui.js"></script> 
+        <script src="../../js/leftTime.min.js"></script>  
+       <script src="../../js/common.js"></script>   
+        <script src="../../js/entryLogistics.js"></script>  
+        <style>
+
+ 
+        </style>
+	</head>  
+	<body>  
+        <div class="csNav">
+            <i class="iconfont icon-logo"></i>
+            <i class="iconfont icon-user"></i> 
+        </div> 
+        <!-- 定位 -->
+        <div class="od_top ">  
+            <span class="ml20">订单号</span>
+            <span>RT151565525820</span> 
+        </div>
+        <div class="wh20"></div> 
+        <div class="inputItemS" id='wuliuShow'>
+                <i class="iconfont icon-logistics- green"></i>
+                <input placeholder="请选择物流"  id="courierirm" readonly="readonly"/>
+                <i class="iconfont icon-right"></i>
+        </div>
+        <div class="inputItemS">
+                <i class="iconfont icon-order green"></i>
+                <input placeholder="请输入物流号" /> 
+        </div> 
+        <div class="submit" id="sumbit">
+            确定
+        </div> 
+
+          <!-- 弹窗 -->
+          <div id="popu" class="popuAll ishide">
+                <div id="bg"></div>
+                <div id="popuC">
+                    <div class="popuTitle">
+                        选择物流
+                        <i class="iconfont icon-close pull-right" id="close"></i>
+                    </div>
+                    <div id="popuRow">
+                        <div class="popu ">
+                            <span>韵达快递</span>
+                            <i class="iconfont icon-selected ishide pull-right"></i>
+                        </div>
+                        <div class="popu">
+                                <span>中通快递</span> 
+                            <i class="iconfont icon-selected ishide pull-right"></i>
+                        </div>
+                        <div class="popu">
+                             <span>顺丰快递</span> 
+                            <i class="iconfont icon-selected ishide pull-right"></i>
+                        </div>
+                        <div class="popu">
+                                <span>邮政物流</span> 
+                            <i class="iconfont  ishide icon-selected pull-right"></i>
+                        </div>
+                        <div class="popu">
+                                <span>申通快递</span> 
+                            <i class="iconfont icon-selected ishide  pull-right"></i>
+                        </div> 
+                    </div>
+                </div>
+        </div>
+     
+</body>  
+</html>

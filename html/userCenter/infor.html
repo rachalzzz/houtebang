@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../css/common.css"> 
+		<link rel="stylesheet" href="../../css/weui.min.css">  
+		<link rel="stylesheet" href="../../css/jquery-weui.css">
+		<link rel="stylesheet" href="../../css/user.css">
+		<link rel="stylesheet" type="text/css" href="../../iconfont/iconfont.css" />   
+		<script src="../../js/jquery-2.1.4.js"></script> 
+		<script src="../../js/jquery-weui.js"></script> 
+		<script src="../../js/leftTime.min.js"></script>  
+       <script src="../../js/common.js"></script>  
+		<script src="../../js/infor.js"></script>  
+		<style>
+
+		</style>
+	</head>  
+	<body> 
+		<div class="infor" id="topBar">
+			<div class="inforItemTop">
+				头像
+				<i class="iconfont icon-right"></i>
+				<img src="../../img/userPic.png" />
+				<input id="file" type="file" accept="image/*" onchange='changeFile()'> 
+			</div>
+			<div class="wh1 pull-right"></div>
+			<div class="inforItem">
+				联系方式
+				<span class="tel">13800138000</span>
+			</div>
+			<div class="wh1 pull-right"></div>
+			<div class="inforItem">
+				昵称 
+				<i class="iconfont icon-right"></i>
+				<span id="userName">HETOL</span>
+			</div>
+		</div> 	 
+		<div id='namePopup' class="ishide"> 
+			<input value="HETOL" id="name" />
+			<div class="sumbit" id="sumbit">
+				确定
+			</div>
+		</div>
+	</body> 
+ 
+</html>

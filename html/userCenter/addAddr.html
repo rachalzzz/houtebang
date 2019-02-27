@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="../../css/common.css"> 
+		<link rel="stylesheet" href="../../css/weui.min.css">  
+		<link rel="stylesheet" href="../../css/jquery-weui.css">
+		<link rel="stylesheet" href="../../css/user.css">
+		<link rel="stylesheet" type="text/css" href="../../iconfont/iconfont.css" />   
+		<script src="../../js/jquery-2.1.4.js"></script> 
+        <script src="../../js/jquery-weui.js"></script> 
+        <script src="../../js/leftTime.min.js"></script> 
+        <script src="../../js/common.js"></script>   
+        <script src="../../js/checkout.js"></script>   
+        <script src="../../js/addAddr.js"></script>   
+	</head>  
+	<body>  
+        <div class="csNav">
+            <i class="iconfont icon-logo"></i>
+            <i class="iconfont icon-user"></i> 
+        </div>
+        <div class="wh20"></div> 
+        <div class="addItem">
+            收件人
+            <input placeholder="请输入收件人" id="username" class="addItem_right" />
+        </div>
+        <div class="addItem">
+            联系电话
+            <input placeholder="请输入联系电话" id="phone" class="addItem_right" />
+        </div>
+        <div class="addItem">
+            省份选择
+            <span class="addItem_right"   id="sheng">请选择</span> 
+            <i class="iconfont icon-right pull-right"></i>
+        </div>
+        <div class="addItem" >
+            城市选择
+            <span class="addItem_right" id="shi">请选择</span> 
+            <i class="iconfont icon-right pull-right"></i>
+        </div>
+        <div class="addItem">
+            区域选择
+            <span class="addItem_right"  id="qu">请选择</span> 
+            <i class="iconfont icon-right pull-right"></i>
+        </div>
+        <div class="addItem2">
+           详细地址
+           <textarea name="" id="address" cols="30" rows="10" placeholder="请填写详细地址" class="addItem_right2" ></textarea> 
+        </div>
+        <div class="wh20"></div> 
+        
+        <div class="addItem">
+            	设为默认地址
+            <input class="weui-switch pull-right" id="ischange"  type="checkbox"   style=" margin-top: 0.16rem;margin-right:3%">
+        </div>
+
+        <div class="sumbit" id="sumbit">
+            	保存
+        </div>  
+<!-- 地址弹窗 --> 
+<div id="popu" class="popuAll ishide">
+	<div id="bg"></div>
+	<div id="popuC">
+		<div class="popuTitle">
+			所在地区
+			<i class="iconfont icon-close pull-right" id="close"></i>
+		</div>
+		<div id="popuRow">
+			<div class="popuRows">
+				<span id="province" class="active">广东</span> 
+				<span id="city"  class="ishide">请选择</span> 
+				<span id="area"  class="ishide">请选择</span> 
+			</div>
+			<div class="popuItem" id="provinceItem">
+				<span>省省111</span>
+				<span>省省222</span>
+				<span>省省333</span>
+				<span>省省444</span>
+				<span>省省555</span>
+				<span>省省666</span>
+				<span>省省777</span>
+				<span>省省888</span> 
+			</div>
+			<div class="popuItem ishide" id="cityItem">
+				<span>市市111</span>
+				<span>市市222</span>
+				<span>市市333</span>
+				<span>市市444</span>
+				<span>市市555</span>
+				<span>市市666</span>
+				<span>市市777</span>
+				<span>市市888</span> 
+			</div>
+			<div class="popuItem ishide" id="areaItem">
+				<span>区区111</span>
+				<span>区区222</span>
+				<span>区区333</span>
+				<span>区区444</span>
+				<span>市市555</span>
+				<span>区区666</span>
+				<span>区区777</span>
+				<span>区区888</span> 
+			</div>
+			 
+		</div>
+	</div>
+</div>  
+</body> 
+<script> 
+   
+</script>
+ 
